@@ -1,40 +1,21 @@
-
-<html lang="zh">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>color | wfy-belief</title>
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wfy-belief/CDN/img/favicon.ico">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/wfy-belief/CDN/img/favicon.ico">
-    <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/wfy-belief/CDN/img/favicon.ico">
-    <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-        },
-        ::-webkit-scrollbar {
-        /*隐藏滚轮*/
-        display: none;
-        }
-        
-    </style>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>color 起始页</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 <body>
-    <main>
-        <iframe id="iframepage" runat="server" src="https://colordrop.io/" height="100%" , width="100%" οnlοad="changeFrameHeight()"
-            frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="yes"
-            allowtransparency="yes"></iframe>
-    </main>
-
-    <script>
-        function changeFrameHeight() {
-            var ifm = document.getElementById("iframepage");
-            ifm.height = document.documentElement.clientHeight;
-        }
-        window.onresize = function () {
-            changeFrameHeight();
-        }
-    </script>
+  <div class="container">
+    <a href="/draw">
+    <h3><span class="hint--top hint--info hint--large hint--rounded hint--bounce" aria-label="&emsp;请点击此处跳转至draw.io对应的颜色网站">draw.io</span></h3></a>
+    <a href="/chinese">
+    <h3><span class="hint--top hint--info hint--large hint--rounded hint--bounce" aria-label="&emsp;请点击此处跳转至中国色对应的颜色网站">中国色</span></h3></a>
+  </div>
 </body>
-
 </html>
