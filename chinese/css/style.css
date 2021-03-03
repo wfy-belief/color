@@ -1,5 +1,30 @@
 @charset "utf-8";
 
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #9fefaf;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::selection {
+  background: #638fff;
+  color: #f7f7f7;
+}
+
 @-webkit-keyframes 'color-rotate' {
   0% {
     -webkit-transform: rotateX(0deg) rotateY(0deg);
@@ -46,7 +71,7 @@ ul {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/texture.png);
+  background-image: url(/img/texture.png);
   transition: background-color 2s ease-in;
   background-color: #ddd;
 }
@@ -121,7 +146,7 @@ ul {
   transition-property: color, background-color, opacity;
 }
 #colors li div {
-  background: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/col_bg.png) no-repeat;
+  background: url(/img/col_bg.png) no-repeat;
 }
 #colors li div canvas {
   position: absolute;
@@ -134,7 +159,7 @@ ul {
   left: 909px;
 }
 #logo h1 {
-  background: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/logo.png) no-repeat;
+  background: url(/img/logo.png) no-repeat;
   height: 520px;
   width: 60px;
   position: fixed;
@@ -181,7 +206,7 @@ ul {
   z-index: 500;
   width: 100px;
   margin-left: 0;
-  background: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/bdr_w_50.png) left top no-repeat;
+  background: url(/img/bdr_w_50.png) left top no-repeat;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform 1s ease-in-out;
 }
@@ -209,7 +234,7 @@ ul {
   background-position: -30px 0;
 }
 #CMYKcolor dd {
-  background: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/bdr_w_50.png) left bottom no-repeat;
+  background: url(/img/bdr_w_50.png) left bottom no-repeat;
   font-family: "myriad-pro-1", "myriad-pro-2", sans-serif;
   font-size: 24px;
   font-weight: 300;
@@ -273,7 +298,7 @@ ul {
   z-index: 500;
 }
 #CMYKcolor dd .circle {
-  background: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/circle.png) no-repeat;
+  background: url(/img/circle.png) no-repeat;
   display: block;
   height: 50px;
   left: 0;
@@ -289,7 +314,7 @@ ul {
   position: absolute;
   top: 0;
   width: 50px;
-  background: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/colorBox.png) no-repeat;
+  background: url(/img/colorBox.png) no-repeat;
 }
 #CMYKcolor dd .r,
 #CMYKcolor dd .l {
@@ -301,13 +326,13 @@ ul {
   height: 50px;
 }
 #CMYKcolor dd .r {
-  -webkit-mask-image: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/circle_r.png);
+  -webkit-mask-image: url(/img/circle_r.png);
 }
 #CMYKcolor dd .r .line {
   transition: transform 0.5s linear;
 }
 #CMYKcolor dd .l {
-  -webkit-mask-image: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/circle_l.png);
+  -webkit-mask-image: url(/img/circle_l.png);
 }
 #CMYKcolor dd .l .line {
   -webkit-transition: -webkit-transform 0.5s linear;
@@ -346,7 +371,7 @@ ul {
   background-position: -60px 0;
 }
 #RGBcolor dd {
-  background: url(https://cdn.jsdelivr.net/gh/wfy-belief/color@master/chinese/img/bdr_w_50.png) left bottom no-repeat;
+  background: url(/img/bdr_w_50.png) left bottom no-repeat;
   color: #FFF;
   font-family: "myriad-pro-1", "myriad-pro-2", sans-serif;
   font-size: 24px;
